@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey CodingComplex</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+body{
+    background-color: rgb(84, 84, 184);
+    font-family: 'Ubuntu', sans-serif;
+}
+header::before{
+            content: "";
+            background-image: url('https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            /* the position of image is not defined so it will not visible */
+            /* now */
+            position: absolute;
+            width: 100vw;
+            height: 168vh;
+            top: 0;
+            left: 0;
+            opacity: 0.2;
+            /* zindex will show text */
+            z-index: -1;
+            object-fit: cover;
+        }
+        .heading{
+            text-align: center;
+        }
+
+        #title{
+            font-weight: normal;
+            color: white;
+            font-size: 45px;
+            animation-name: title_ani;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+        }
+
+        #title span{
+            color: rgb(250, 202, 82);
+            animation-name: title_ani;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes title_ani{
+            50%{
+                color: transparent;
+            }
+        }
+        #description{
+            color: white;
+            font-size: 25px;
+        }
+        .container{
+            color: white;
+            width: 60vw;
+            height: 139vh;
+            margin: auto;
+            background-color: rgba(27, 27, 50, 0.8);
+            border: 1px solid rgba(27, 27, 50);
+            border-radius: 10px;
+            font-size: 27px;
+        }
+
+        .name{
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+        .name [type="text"]{
+            display: block;
+            width: 90%;
+            height: 30px;
+            margin-top: 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #email{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        #email [type="text"]{
+            display: block;
+            width: 90%;
+            height: 30px;
+            margin-top: 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #number{
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        #number [type="text"]{
+            display: block;
+            width: 90%;
+            height: 30px;
+            margin-top: 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .option label{
+            margin-left: 50px;
+            margin-top: 35px;
+        }
+
+        #dropdown{
+            display: block;
+            width: 85%;
+            height: 35px;
+            margin-top: 20px;
+            margin-left: 50px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .radio label{
+            margin-left: 50px;
+            margin-top: 35px;
+            margin-right: 15px;
+        }
+
+        .check label{
+            display: block;
+            margin-left: 50px;
+            margin-top: 35px;
+        }
+
+        #frend{
+            margin-top: 35px;
+            margin-left: 50px;
+        }
+
+        #bcend{
+            
+            margin-left: 20px;
+        }
+
+        .suggestion{
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+        .suggestion [type="text"]{
+            display: block;
+            width: 90%;
+            height: 200px;
+            margin-top: 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: larger; 
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .sub-button{
+            display: block;
+            background-color: rgba(6, 18, 59, 0.8);
+            width: 20%;
+            height: 30px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+            border: 0px solid rgb(35, 119, 94);
+            color: white;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .sub-button:hover{
+            background-color: skyblue;
+            color: black;
+            transition: all 0.5s ease-in-out; 
+            cursor: pointer;
+        }
+        
+        .copyright{
+            margin-top: 10px;
+            margin-top: 20px;
+        }
+
+        
+</style>
+<body>
+    <!-- user story 1 -->
+   <header class="heading">
+    <h1 id="title">Survey The <span>C</span>oding<span>C</span>omplex</h1>
+    <p id="description"> <i> Thank you for taking the time to help us improve the platform</i></p>
+   </header>
+    
+   <div class="container">
+   <main class="main-content">
+       <!--user story 2 & 3   -->
+    <form action="survey-form-backend" id="survey-form">
+      <!--user story 4 , 5 & 6   -->
+        
+        <label for="formname" id="name-label"></label>
+        <div class="name">Name <input type="text" placeholder="Enter your name" name="myname"> 
+        </div>
+        <label for="email" id="email-label"></label>
+        <div id="email">
+            Email <input type="text" placeholder="Enter Your Email" name="myemail" required>
+        </div>
+      <br>
+      <!-- user story 7 ,8 & 9 -->
+      
+          <label for="number" id="number-label"></label>
+          <div id="number">
+             Age <input type="text" placeholder="Enter your Age"    name="mynumber" min="18" max="30" required>
+          </div>
+      <br>
+            <!-- user story 12 -->
+      <div class="option">
+      <label for="dropoptions" >Which option best describes your current role?</label>
+          <select name="myoptions" id="dropdown">
+             <option value="none">None</option>
+             <option value="stu">Student</option>
+             <option value="ftj">Full time job</option>
+             <option value="ftl">Full time learner</option>
+             <option value="pns">Prefer not say</option>   
+          </select>
+      </div>   <br>
+
+      <div class="radio">
+          <label for="radio-buttons">Would you recommend the CodingComplex to a friend?</label>
+          <input type="radio" name="choose" checked>Yes  <!-- in radio type name must be same for all -->
+          <input type="radio" name="choose">No
+      </div><br>
+
+      <div class="check">
+          <label for="check-box">What would you like to see improved?</label>
+          <input type="checkbox" value="webd" id="frend">C Programming <!--in checkbox type value must be same for all -->
+          <input type="checkbox" value="webd" id="bcend">C++ Programming
+          <input type="checkbox" value="webd" id="pyth">Python
+      </div><br>
+
+      <div class="suggestion">
+          <label for="suggest">Any comments or suggestions?</label>
+          <input type="text" placeholder="Write here....">
+      </div><br>
+
+      <button class="sub-button"> Submit </button>
+
+    </form>
+   </main>
+</div>
+
+<footer class="copyright">
+    Copyright &copy; 2021 - The CodingComplex - All rights reserved.&nbsp;
+  Designed & Organised By : Shayan Qureshi
+
+</footer>
+</body>
+</html>

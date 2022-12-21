@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CodingComplex Social Media</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .background{
+    background: rgba(0, 0, 0, 0.7) url('https://cutewallpaper.org/21/school-computer-background/HS-Computer-Lab-Patricia-Buczek-Oakfield-Alabama-Central-.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+         .container{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             /* border: 2px solid black; */
+             height: 100vh;
+         }
+
+          #insta{
+             width: 250px;
+             height: 250px;
+             margin-bottom: -5px;
+         }
+         
+         #faceb{
+             width: 250px;
+             height: 250px;
+             margin-left: 45px;
+             margin-right: 50px;
+            
+         }
+
+         #linkd{
+             width: 250px;
+             height: 250px;
+         }
+
+         .sociallist{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: row;
+             /* border: 2px solid green; */
+             /* height: 100vh; */
+             /* margin: 20px; */
+         }
+
+         span{
+             color: rgb(250, 202, 82);
+         }
+         
+         h2{
+            font-family: 'Roboto Slab', serif;
+             text-align: center;
+             font-size: xx-large;
+             font-weight: normal;
+         }
+
+         @media only screen and (max-width: 1140px){
+             .sociallist{
+                 flex-direction: column;
+             }
+
+             #insta{
+                 /* margin-top: 20px; */
+             width: 100px;
+             height: 100px;
+         }
+         
+         #faceb{
+             width: 100px;
+             height: 100px;
+             /* margin-top: 50px; */
+             /* margin-bottom: 50px; */
+             margin-left: 0;
+             margin-right: 0;
+         }
+
+         #linkd{
+             /* margin-top: 20px; */
+             width: 100px;
+             height: 100px;
+         }
+
+         .container{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             /* border: 2px solid black; */
+             /* height: 100vh; */
+         }
+
+         .sociallist{
+             height: 80%;
+         }
+         /* .box{
+             height: 100vh;
+         } */
+         }
+    </style>
+</head>
+<body>
+    <h2 style="color: white;" class="background"> The <span>C</span>oding<span>C</span>omplex Social Media</h2>
+    <div class="container background">
+        
+        <div class="sociallist">
+            <a href="https://instagram.com/shayan_qureshi_?utm_medium=copy_link" target="_blank"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="image" id="insta"></a>
+            <a href="https://www.facebook.com/shayan.m.qureshi/" target="_blank"><img src="data:image/png;base64,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" alt="image" id="faceb"></a>
+            <a href="https://www.linkedin.com/in/shayan-qureshi-973815213/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Wbseries_linkdin.png" alt="image" id="linkd"></a>
+        </div>
+    </div>
+
+    <footer class="background">
+        <p class="footerclass" style="text-align: center; color: white;">
+            Copyright &copy; 2021 - The CodingComplex - All rights reserved.<br>
+            Designed & Organized by Shayan Qureshi.
+        </p>
+    </footer>
+
+    
+</body>
+</html>
